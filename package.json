@@ -1,38 +1,6 @@
 {
     "name": "ocamlgraph",
     "exportedEnvVars": {
-        "ocamlgraph_version": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "1.8.7"
-        },
-        "CAML_LD_LIBRARY_PATH": {
-            "global": true,
-            "resolveAsRelativePath": true,
-            "globalCollisionBehavior": "joinPath",
-            "val": "./_build/ocamlfind/lib/stublibs"
-        },
-        "ocamlgraph_enable": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "enable"
-        },
-        "ocamlgraph_installed": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "true"
-        },
-        "FINDLIB": {
-            "global": true,
-            "resolveAsRelativePath": true,
-            "globalCollisionBehavior": "joinPath",
-            "val": "./_build/ocamlfind/lib"
-        },
-        "version": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "1.8.7"
-        }
     },
     "version": "1.8.7",
     "dependencies": {
