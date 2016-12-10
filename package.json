@@ -1,5 +1,5 @@
 {
-    "name": "ocamlgraph-actual",
+    "name": "ocamlgraph",
     "exportedEnvVars": {
         "ocamlgraph_version": {
             "global": true,
@@ -32,26 +32,16 @@
             "global": true,
             "globalCollisionBehavior": "clobber",
             "val": "1.8.7"
-        },
-        "PATH": {
-            "global": true,
-            "resolveAsRelativePath": true,
-            "globalCollisionBehavior": "joinPath",
-            "val": "./_build/ocamlfind/bin"
         }
     },
     "version": "1.8.7",
     "dependencies": {
-        "substs": "https://github.com/yunxing/substs.git",
-        "@opam-alpha/ocamlfind": "*",
-        "nopam": "https://github.com/yunxing/nopam.git",
-        "opam-installer-bin": "https://github.com/yunxing/opam-installer-bin.git",
-        "dependency-env": "https://github.com/npm-ml/dependency-env.git"
+        "ocamlfind": "andreypopp/ocamlfind"
     },
-    "scripts": {
-        "postinstall": "eval $(dependencyEnv) && nopam && ./configure && make && make install-findlib && (opam-installer --prefix=$opam_prefix || true)"
+    "pjc": {
+        "build": "./configure && make && make install-findlib"
     },
     "peerDependencies": {
-        "@opam-alpha/ocaml": ">= 4.2.3"
+        "ocaml": "andreypopp/ocaml#trunk"
     }
 }
