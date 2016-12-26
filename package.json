@@ -1,13 +1,16 @@
 {
     "name": "ocamlgraph",
-    "exportedEnvVars": {
-    },
     "version": "1.8.7",
     "dependencies": {
         "ocamlfind": "andreypopp/ocamlfind#esy"
     },
-    "pjc": {
-        "build": "make clean && ./configure && make && make install-findlib"
+    "esy": {
+        "build": [
+          "(make clean || true)",
+          "./configure",
+          "make",
+          "make install-findlib"
+        ]
     },
     "peerDependencies": {
         "ocaml": "andreypopp/ocaml#esy"
