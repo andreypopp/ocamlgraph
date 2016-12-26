@@ -7,7 +7,7 @@
         "ocamlfind": "andreypopp/ocamlfind#esy"
     },
     "pjc": {
-        "build": "./configure && make && make install-findlib"
+        "build": "make clean && ./configure && make && make install-findlib"
     },
     "peerDependencies": {
         "ocaml": "andreypopp/ocaml#esy"
